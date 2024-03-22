@@ -31,6 +31,7 @@ function App() {
       })
     } catch (error) {
       console.error('There was a problem fetching the user data:', error);
+      alert("User nije pronađen!")
     }
   }
 
