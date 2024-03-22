@@ -26,6 +26,17 @@
     gap: 1rem;
 }
 
-.repos .facts{
-    border: 1px solid black;
+.repos > div,
+.facts > div {
+    box-sizing: border-box;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 0.75rem;
+}
+
+.repos :first-child ,
+.facts :first-child  {
+    box-sizing: border-box;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 0.75rem  0.75rem 0 0 ;
+    padding: 0.75rem;
 }
