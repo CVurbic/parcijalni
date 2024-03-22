@@ -6,25 +6,22 @@ class Results extends React.Component {
 
 
     render() {
-        console.log(this.props);
         return (
             <div className='result'>
                 <div className='header'>
-                    {/*      <img src={this.props.userData.avatar_url} alt="User Avatar" />
+                    <img src={this.props.userData.avatar_url} alt="User Avatar" />
                     <h1>{this.props.userData.name}</h1>
-                */} </div>
+                </div>
                 <div className='content'>
-                    {/*  <p><strong>BIO:</strong> {this.props.userData.bio}</p>
-                    <p><strong>LOCATION: </strong>{this.props.userData.location}</p>
-                    <strong>REPOSITORIES:</strong>
-                    {this.props.userRepos.map((repo)=>(
-                        <div key={repo.id}>{repo.name}</div>
-                    ))
+                    <p>
+                        <strong>BIO:</strong> {this.props.userData.bio} <br />
+                        <strong>LOCATION: </strong>{this.props.userData.location} <br />
+                        <strong>REPOSITORIES:</strong>
+                    </p>
+                    <div className="repos">
 
-                    } */}
-                    <div className='repos facts'>
-                        {this.props.catFacts.map((repo, index) => (
-                            <div key={index}>{repo.fact}</div>
+                        {this.props.userRepos.map((repo) => (
+                            <div key={repo.id}>{repo.name}</div>
                         ))
 
                         }
